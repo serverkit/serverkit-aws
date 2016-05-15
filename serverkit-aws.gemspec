@@ -3,7 +3,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require "serverkit/aws/version"
 
 Gem::Specification.new do |spec|
-  spec.name          = "serverkit-s3"
+  spec.name          = "serverkit-aws"
   spec.version       = Serverkit::Aws::VERSION
   spec.authors       = ["Ryo Nakamura"]
   spec.email         = ["r7kamura@gmail.com"]
