@@ -1,3 +1,6 @@
+## 0.0.3
+- Fix gemspec name
+
 ## 0.0.2
 - Renamed from serverkit-s3 to serverkit-aws
 
