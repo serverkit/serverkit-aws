@@ -1,5 +1,5 @@
 module Serverkit
-  module S3
+  module Aws
     VERSION = "0.0.1"
   end
 end

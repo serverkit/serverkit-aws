@@ -1,13 +1,13 @@
 lib = File.expand_path("../lib", __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require "serverkit/s3/version"
+require "serverkit/aws/version"
 
 Gem::Specification.new do |spec|
   spec.name          = "serverkit-s3"
-  spec.version       = Serverkit::S3::VERSION
+  spec.version       = Serverkit::Aws::VERSION
   spec.authors       = ["Ryo Nakamura"]
   spec.email         = ["r7kamura@gmail.com"]
-  spec.summary       = "Serverkit plug-in for Amazon S3"
+  spec.summary       = "Serverkit plug-in for Amazon Web Services (AWS)."
   spec.homepage      = "https://github.com/serverkit/serverkit-s3"
   spec.license       = "MIT"
 

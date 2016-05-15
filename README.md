@@ -1,10 +1,10 @@
-# serverkit-s3
-[Serverkit](https://github.com/serverkit/serverkit) plug-in for Amazon S3.
+# serverkit-aws
+[Serverkit](https://github.com/serverkit/serverkit) plug-in for Amazon Web Services (AWS).
 
 ## Install
 ```rb
 # Gemfile
-gem "serverkit-s3"
+gem "serverkit-aws"
 ```
 
 ## Resource
