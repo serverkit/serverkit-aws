@@ -1,9 +1,12 @@
 require "aws-sdk"
+require "serverkit/aws/client_options_generatable"
 require "serverkit/resources/base"
 
 module Serverkit
   module Resources
     class S3Bucket < Base
+      include ::Serverkit::Aws::ClientOptionsGeneratable
+
       attribute :aws_access_key_id, type: String
       attribute :aws_region, type: String
       attribute :aws_secret_access_key, type: String
@@ -27,15 +30,6 @@ module Serverkit
       # @return [Aws::S3::Client]
       def client
         @client ||= ::Aws::S3::Client.new(client_options)
-      end
-
-      # @return [Hash]
-      def client_options
-        options = { region: aws_region }
-        if aws_access_key_id || aws_secret_access_key
-          options[:credentials] = ::Aws::Credentials.new(aws_access_key_id, aws_secret_access_key)
-        end
-        options
       end
     end
   end
