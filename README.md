@@ -36,6 +36,7 @@ resources:
               origin_access_identity: ""
         quantity: 1
 ```
+
 ### s3_bucket
 Create a S3 bucket.
 
